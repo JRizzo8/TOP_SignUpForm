@@ -1,2 +1,2 @@
 # TOP_SignUpForm
-simple form practice site for the Odin project.
+form practice for the Odin project
