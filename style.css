@@ -1,0 +1,125 @@
+:root{
+    --left-space: 48px;
+}
+*{
+    box-sizing: border-box;
+}
+.body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.main{
+    min-height: 100vh;
+    display: flex;
+}
+.imageSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-position: center center;
+    background-image: url("./background.jpg");
+    background-size: cover;
+    color: white;
+    text-align: center;
+    width: 25%;
+    height: 100vh;
+
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-family: "Norse Bold";
+    margin-top: 20vh;
+    padding: 16px 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.banner img{
+    height: 100px;
+}
+.attribution{
+    font-size: .9rem;
+}
+.content{
+    width: 75%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.header > p {
+    font-size: 1.4rem;
+    margin-right: 250px;
+    margin-left: var(--left-space);
+    font-weight: bold;
+    max-width: 80%;
+    margin-bottom: 8px;
+}
+.formContainer{
+    display: flex;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+.formContainer p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.formWrapper{
+    display: flex;
+    gap: 40px;
+}
+.formCol{
+    display: flex;
+    flex-direction: column;
+}
+form{
+    margin-left: var(--left-space);
+    margin-right: 250px;
+    margin-bottom: 20px;
+}
+label{
+    margin-top: 10px;
+}
+button{
+    margin-top: 20px;
+    margin-left: var(--left-space);
+    background-color: #596d48;
+    border-radius: 5px;
+    width: 15%;
+    color: white;
+    height: 30px;
+}
+.login{
+    margin-left: var(--left-space);
+    margin-right: 250px;
+}
+.login p{
+    font-size: 1rem;
+    font-weight: bold;
+}
+label{
+    display: block;
+    margin-bottom: 2px;
+    font-size: 12px;
+    letter-spacing: .3em;
+
+}
+input:focus{
+    outline: none;
+    border: solid 1px blue;
+    box-shadow: 0 0 5px rgb(0, 0, 0.5);
+}
+input:invalid{
+    border: solid 1px red;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+    
